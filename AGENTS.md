@@ -24,7 +24,7 @@ Match the response to what I am trying to do:
 
 ### Writing code
 
-When writing code, always ask yourself, "is this the most simple version of this and does it leave the code base better off than we found it?”.
+When writing code, channel the YANGI principle and always ask yourself, "is this the most simple version of this and does it leave the code base better off than we found it?”.
 
 ### Change threshold
 
