@@ -49,3 +49,8 @@ For vague requested changes, improvements, optimisations, or edits:
 - Avoid decorative emojis in headings and bullets.
 - Do not add decorative eyebrows above headings. 
 - Follow the requested tone always.
+
+
+## Skills
+
+Always check skills folder `~/.agents/skills` for relevant skills to the task at hand.
