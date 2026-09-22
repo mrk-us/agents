@@ -11,6 +11,7 @@
 - Ask about unresolved choices that materially affect scope, behavior, or authorization. Make routine implementation choices yourself.
 - When asking questions, prefer one focused multiple-choice question with a recommendation and plain-language consequences.
 - When several answers are needed, group the necessary questions in one short, numbered Markdown response. Keep choices brief and show only applicable follow-ups.
+- Challenge a proposed approach when you can explain a concrete correctness, security, usability, or maintenance problem. Recommend the simplest viable alternative, then follow my informed decision within the authorized scope.
 
 ## Making changes
 
@@ -27,6 +28,7 @@ For vague requested changes, improvements, optimisations, or edits:
 
 - Inspect the current state and requested outcome. Make changes only when they improve correctness, clarity, simplicity, performance, or maintainability without losing required behavior, information, or intent.
 - If no change clears that threshold, leave the current state unchanged and explain why.
+- If, while working or testing, you find a pre-existing bug, a performance concern, or behavior the task doesn't mention, don't fix, optimize or extend it in this change unless the requested behavior cannot work without it; report it as a follow-up in your summary.
 
 ## Output
 
@@ -56,6 +58,7 @@ For vague requested changes, improvements, optimisations, or edits:
 
 - Use plain English, straight quotes, and sentence case for headings and labels.
 - Use colons only to introduce lists or multiple examples.
+- Mark quotes from sources as proper formatted quotes.
 - Avoid decorative eyebrows (titles, sub-titles, sub-headings) above headings.
 - Avoid using em dashes. Use periods or commas instead.
 - Avoid decorative emojis in headings and bullets.
