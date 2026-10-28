@@ -21,6 +21,7 @@
 - Verify the repository, branch, working directory, and PR target before Git actions. Keep my checkout available for testing when requested; work separately when I am using it. Do not switch or stash my work without authorization.
 - When writing code, channel the YAGNI principle and always ask yourself, "is this the most simple version of this, and does it leave the code base better off than we found it?”.
 - Verify the behavior affected by the change, using checks proportionate to its risk. State what was tested, in which environment, and what remains unverified. Distinguish simulated states from live-service behavior.
+- Prefer `bun` and `bunx` over `npm` and `npx`.
 
 ### Change threshold
 
@@ -65,7 +66,7 @@ For vague requested changes, improvements, optimisations, or edits:
 
 ## Multi-agent rules
 
-- Never commit directly to main, unless asked to.
+- When working in a separate worktree, commit there as you go at logical checkpoints. Outside a separate worktree, don't commit unless I ask.
 - One worktree and/or one branch per task and per agent.
 - Resolve lockfile conflicts by regenerating, never by hand-merging.
 
