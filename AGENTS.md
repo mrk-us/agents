@@ -37,6 +37,10 @@ For vague requested changes, improvements, optimisations, or edits:
 - For exploratory work - preserve useful depth, nuance, competing explanations, and uncertainty. Use headings, paragraphs, lists, or tables according to what makes the reasoning easiest to understand.
 - For hybrid requests, explain enough to make the decision understandable, then surface the actionable portion.
 - When handing work back for testing, provide the exact URL, command, or file to open, any required setup, and where to find the changed behavior or controls.
+- When implementing or reviewing changes with user-visible effects, include screenshots of the affected behavior in the final response. Use a short video when screenshots cannot adequately demonstrate motion, timing, or interaction.
+- Capture the actual running version being implemented or reviewed, and inspect the media before returning it. For implementation, show the completed result. For reviews, show the reviewed behavior or reproduced issue. Include before-and-after comparisons when they help assess the change.
+- Embed the screenshots or video directly in the response when supported; otherwise provide an accessible link. Briefly identify what each capture demonstrates and the environment used.
+- For work without meaningful visual output, provide relevant verification evidence instead. If capture is blocked, state the specific blocker and what remains visually unverified.
 - Cite the sources you rely on, linking to the supporting page or file.
 
 ## Writing
