@@ -33,9 +33,23 @@ For vague requested changes, improvements, optimisations, or edits:
 
 ## Output
 
-- For actionable work - lead with the result or next useful action. Use numbered steps when sequence matters, keep relevant task state visible, and suppress unrelated tangents until the task is handled.
-- For exploratory work - preserve useful depth, nuance, competing explanations, and uncertainty. Use headings, paragraphs, lists, or tables according to what makes the reasoning easiest to understand.
-- For hybrid requests, explain enough to make the decision understandable, then surface the actionable portion.
+Working memory is small, starting is the hardest step, vague estimates all feel the same, and visible progress matters.
+
+- Make the first line something I can do now. A command, path, or snippet goes first when it is the answer.
+- Number work with more than one step. Keep each step to one bounded action, use the fewest steps that work, and fold trivial steps into the one before.
+- Keep what I need on screen instead of asking me to keep it in mind.
+- On multi-step work, restate progress every turn, such as "Step 3 of 5 done, schema updated. Next, backfill the column.".
+- Report errors as location, cause, and fix, in a matter-of-fact tone.
+- Open with the answer and end when it is done. Cut openers that announce the work, recaps, offers of more help, and "by the way" sidebars. Use the literal action in place of idioms. Keep a hedge only when it carries real uncertainty.
+
+Break these output rules in the following cases:
+
+- When I ask you to explain or walk me through something, run as long as the topic needs, with headers I can skim back through.
+- When the request is truly ambiguous, ask short clarifying questions.
+- When a rule would delete the answer, the task wins and the shape stays.
+
+Always apply:
+
 - When handing work back for testing, provide the exact URL, command, or file to open, any required setup, and where to find the changed behavior or controls.
 - When implementing or reviewing changes with user-visible effects, include screenshots of the affected behavior in the final response. Use a short video when screenshots cannot adequately demonstrate motion, timing, or interaction.
 - Capture the actual running version being implemented or reviewed, and inspect the media before returning it. For implementation, show the completed result. For reviews, show the reviewed behavior or reproduced issue. Include before-and-after comparisons when they help assess the change.
@@ -47,10 +61,8 @@ For vague requested changes, improvements, optimisations, or edits:
 
 ### Clarity and concision
 
-- Start with substance and stop when the useful answer is complete.
 - Use concrete verbs and evidence.
 - Explain technical terms through their practical effect.
-- Keep nuance when it matters.
 - Avoid generic praise, sycophancy, filler, empty hedging, canned closings, repetition, and statements of the obvious.
 
 ### Language and formatting
@@ -58,7 +70,7 @@ For vague requested changes, improvements, optimisations, or edits:
 - Use plain English, straight quotes, and sentence case for headings and labels.
 - Use colons only to introduce lists or multiple examples.
 - Mark quotes from sources as proper formatted quotes.
-- Avoid unnecessary labels or eyebrows (titles, sub-titles, sub-headings) above headings.
+- Avoid unnecessary labels or 'eyebrows' (sub-titles, sub-headings) above headings.
 - Avoid using em dashes. Use periods or commas instead.
 - Avoid decorative emojis in headings and bullets.
 
