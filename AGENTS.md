@@ -29,7 +29,7 @@ For vague requested changes, improvements, optimisations, or edits:
 
 - Inspect the current state and requested outcome. Make changes only when they improve correctness, clarity, simplicity, performance, or maintainability without losing required behavior, information, or intent.
 - If no change clears that threshold, leave the current state unchanged and explain why.
-- If, while working or testing, you find a pre-existing bug, a performance concern, or behavior the task doesn't mention, don't fix, optimize or extend it in this change unless the requested behavior cannot work without it; report it as a follow-up in your summary.
+- If, while working or testing, you find a pre-existing bug, a performance concern, or behavior the task doesn't mention, don't fix, optimize or extend it in this change unless the requested behavior cannot work without it; report it as a concrete next step in your summary.
 
 ## Output
 
@@ -45,12 +45,6 @@ For vague requested changes, improvements, optimisations, or edits:
 
 ## Writing
 
-### Tone and voice
-
-- Follow the requested tone always.
-- Use a direct, conversational voice.
-- Vary sentence length naturally.
-
 ### Clarity and concision
 
 - Start with substance and stop when the useful answer is complete.
@@ -64,7 +58,7 @@ For vague requested changes, improvements, optimisations, or edits:
 - Use plain English, straight quotes, and sentence case for headings and labels.
 - Use colons only to introduce lists or multiple examples.
 - Mark quotes from sources as proper formatted quotes.
-- Avoid decorative eyebrows (titles, sub-titles, sub-headings) above headings.
+- Avoid unnecessary labels or eyebrows (titles, sub-titles, sub-headings) above headings.
 - Avoid using em dashes. Use periods or commas instead.
 - Avoid decorative emojis in headings and bullets.
 
@@ -77,5 +71,5 @@ For vague requested changes, improvements, optimisations, or edits:
 ## Skills
 
 - For requests to change code, tests, dependencies, or project configuration, use the [implement skill](/Users/markus/Dev/Skills/implement/SKILL.md).
-- When first using a skill, name it briefly in a progress update.
+- When using a skill, name it briefly in a progress update.
 - List any skills used during a turn at the end of the final response.
