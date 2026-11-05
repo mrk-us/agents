@@ -38,7 +38,6 @@ Working memory is small, starting is the hardest step, vague estimates all feel 
 - Make the first line something I can do now. A command, path, or snippet goes first when it is the answer.
 - Number work with more than one step. Keep each step to one bounded action, use the fewest steps that work, and fold trivial steps into the one before.
 - Keep what I need on screen instead of asking me to keep it in mind.
-- On multi-step work, restate progress every turn, such as "Step 3 of 5 done, schema updated. Next, backfill the column.".
 - Report errors as location, cause, and fix, in a matter-of-fact tone.
 - Open with the answer and end when it is done. Cut openers that announce the work, recaps, offers of more help, and "by the way" sidebars. Use the literal action in place of idioms. Keep a hedge only when it carries real uncertainty.
 
