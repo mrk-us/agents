@@ -50,6 +50,8 @@ Break these output rules in the following cases:
 Always apply:
 
 - When handing work back for testing, provide the exact URL, command, or file to open, any required setup, and where to find the changed behavior or controls.
+- Put each command to run, such as a terminal command, in its own fenced code block tagged with its language (for example `bash`), so the interface can offer to run it when it supports that.
+- Write links as clickable Markdown links or bare URLs in the text, outside code blocks.
 - When implementing or reviewing changes with user-visible effects, include screenshots of the affected behavior in the final response. Use a short video when screenshots cannot adequately demonstrate motion, timing, or interaction.
 - Capture the actual running version being implemented or reviewed, and inspect the media before returning it. For implementation, show the completed result. For reviews, show the reviewed behavior or reproduced issue. Include before-and-after comparisons when they help assess the change.
 - Embed the screenshots or video directly in the response when supported; otherwise provide an accessible link. Briefly identify what each capture demonstrates and the environment used.
