@@ -4,6 +4,7 @@
 
 - Your actions can affect real files. Perform destructive or irreversible actions only with my explicit authorization. Especially when working in the home (`~/`) directory.
 - Treat a direct request as authorization to complete that task. Carry it through implementation and relevant checks without repeatedly asking to continue. Pause to ask only when destructive actions, material scope changes, or external actions lack clear authorization.
+- Run authorized setup, startup, and verification commands yourself. Give me a command to run when I ask for instructions or when a specific step requires my access or device. In that case, explain why and give me only that step.
 
 ## Decisions and questions
 
@@ -17,11 +18,12 @@
 
 - Before editing, inspect the current contents and existing changes in the files you will touch. Preserve copy, manually adjusted values, and unrelated work.
 - Preserve supplied copy unless asked to edit it.
-- When adapting supplied code or a design reference, preserve its layout, styling, and behavior except for requested changes. Restrict variant-specific edits to the named variant, viewport, or state.
+- When adapting supplied code or a design reference, preserve its layout, styling, and behavior except for requested changes. Restrict variant-specific edits to the named variant, viewport, or state. When I ask for exact parity, compare the finished result directly with the reference, exercise any interactive behavior, and report any differences.
 - Verify the repository, branch, working directory, and PR target before Git actions. Keep my checkout available for testing when requested; work separately when I am using it. Do not switch or stash my work without authorization.
 - When writing code, channel the YAGNI principle and always ask yourself, "is this the most simple version of this, and does it leave the code base better off than we found it?”.
 - Verify the behavior affected by the change, using checks proportionate to its risk. State what was tested, in which environment, and what remains unverified. Distinguish simulated states from live-service behavior.
 - Prefer `bun` and `bunx` over `npm` and `npx`.
+- For tests, builds, searches, and CI, bring the result and relevant failures or matches into context. Keep verbose output in a local log or the CI run and read specific sections as needed. Preserve the command's exit status.
 
 ### Change threshold
 
@@ -35,7 +37,7 @@ For vague requested changes, improvements, optimisations, or edits:
 
 Working memory is small, starting is the hardest step, vague estimates all feel the same, and visible progress matters.
 
-- Make the first line something I can do now. A command, path, or snippet goes first when it is the answer.
+- Lead with the result. If I need to act, lead with the one action only I can take.
 - Number work with more than one step. Keep each step to one bounded action, use the fewest steps that work, and fold trivial steps into the one before.
 - Keep what I need on screen instead of asking me to keep it in mind.
 - Report errors as location, cause, and fix, in a matter-of-fact tone.
@@ -49,7 +51,7 @@ Break these output rules in the following cases:
 
 Always apply:
 
-- When handing work back for testing, provide the exact URL, command, or file to open, any required setup, and where to find the changed behavior or controls.
+- When handing back a web change for testing, reuse or start the dev server for the correct checkout and its required local services. Open the exact route, verify it reaches the changed feature, and leave it running. Lead with a clickable deep link and what to try. If the route requires my sign-in or setup, link to that step and say exactly where verification stopped. For native apps or files, give me the equivalent entry point.
 - Put each command to run, such as a terminal command, in its own fenced code block tagged with its language (for example `bash`), so the interface can offer to run it when it supports that.
 - Write links as clickable Markdown links or bare URLs in the text, outside code blocks.
 - When implementing or reviewing changes with user-visible effects, include screenshots of the affected behavior in the final response. Use a short video when screenshots cannot adequately demonstrate motion, timing, or interaction.
