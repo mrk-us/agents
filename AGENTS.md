@@ -82,7 +82,7 @@ Always apply:
 - When working in a separate worktree, commit there as you go at logical checkpoints. Outside a separate worktree, don't commit unless I ask.
 - One worktree and/or one branch per task and per agent.
 - Resolve lockfile conflicts by regenerating, never by hand-merging.
-- When a delegated task includes commits or PRs, tell the child to use the [commit skill](/Users/markus/Dev/Skills/commit/SKILL.md) and [file-pr skill](/Users/markus/Dev/Skills/file-pr/SKILL.md), and pass on the attribution rules below.
+- When delegating, include the [commit skill](/Users/markus/Dev/Skills/commit/SKILL.md) if the child will commit and the [file-pr skill](/Users/markus/Dev/Skills/file-pr/SKILL.md) if it will open a PR. Pass along the attribution rules for those actions.
 
 ## Commits and PRs
 
